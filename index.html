@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>لعبة الباندا والعمود</title>
+    <link rel="stylesheet" href="style.css" />
+    <audio id="jumpSound" src="jump.mp3" preload="auto"></audio>
+    <audio id="failSound" src="fail.mp3" preload="auto"></audio>
+  </head>
+  <body>
+    <div id="game">
+      <img id="panda" src="panda.png" alt="باندا" />
+      <div id="score">النقاط: 0</div>
+
+      <!-- نافذة النهاية المنبثقة -->
+      <div id="gameOver" style="display: none">
+        انتهت اللعبة!
+        <br />
+        <button id="restartBtn">إعادة المحاولة</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
